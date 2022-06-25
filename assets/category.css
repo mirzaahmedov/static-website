@@ -1,0 +1,69 @@
+.category-products-container {
+  text-align: center;
+  padding: 0 20px;
+}
+.category-products-container .category-page-headline {
+  margin: 0;
+}
+@media (max-width: 500px) {
+  .category-products-container .category-page-headline {
+    margin-top: 15px;
+  }
+}
+.category-products-container .category-filters {
+  margin-top: 30px;
+  text-align: left;
+  padding: 30px;
+  background-color: #eef1f3;
+  border-radius: 5px;
+}
+@media (max-width: 920px) {
+  .category-products-container .category-filters {
+    margin-inline: -20px;
+  }
+}
+.category-products-container .category-filters > *:not(:first-child) {
+  margin-top: 20px;
+}
+.category-products-container .category-filters .filter-name {
+  color: #4971ff;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.category-products-container .category-filters .category-filter-diameter {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.category-products-container .category-filters .radio-button {
+  cursor: pointer;
+}
+.category-products-container .category-filters .radio-button .radio-button-input {
+  display: none;
+}
+.category-products-container .category-filters .radio-button .radio-button-input:checked ~ .radio-button-label {
+  color: #4971ff;
+}
+.category-products-container .category-filters .category-filter-type {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.category-products-container .category-filters .category-filter-type .radio-button {
+  cursor: pointer;
+}
+.category-products-container .category-filters .category-filter-type .radio-button .radio-button-label {
+  display: inline-block;
+  padding: 4px 17px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.category-products-container .category-filters .category-filter-type .radio-button .radio-button-input {
+  display: none;
+}
+.category-products-container .category-filters .category-filter-type .radio-button .radio-button-input:checked ~ .radio-button-label {
+  color: #4971ff;
+  outline: 2px solid #4971ff;
+}

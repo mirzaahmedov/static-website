@@ -1,0 +1,90 @@
+$text: #000000;
+$textLighter: #5e5e5e;
+$grey: #cecece;
+$greyLighter: #eef1f3;
+$white: #ffffff;
+$greyLight: #f5f5f5;
+$blue: #4971ff;
+$blueDarker: #1541dd;
+$purple: #5468cb;
+
+.category-products-container {
+  text-align: center;
+  padding: 0 20px;
+
+  .category-page-headline {
+    margin: 0;
+
+    @media (max-width: 500px) {
+      margin-top: 15px;
+    }
+  }
+
+  .category-filters {
+    margin-top: 30px;
+    text-align: left;
+    padding: 30px;
+    background-color: $greyLighter;
+    border-radius: 5px;
+
+    @media (max-width: 920px) {
+      margin-inline: -20px;
+    }
+
+    & > *:not(:first-child) {
+      margin-top: 20px;
+    }
+
+    .filter-name {
+      color: $blue;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+
+    .category-filter-diameter {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .radio-button {
+      cursor: pointer;
+
+      .radio-button-input {
+        display: none;
+
+        &:checked ~ .radio-button-label {
+          color: $blue;
+        }
+      }
+    }
+
+    .category-filter-type {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+
+      .radio-button {
+        cursor: pointer;
+
+        .radio-button-label {
+          display: inline-block;
+          padding: 4px 17px;
+          background-color: $white;
+          border-radius: 5px;
+        }
+
+        .radio-button-input {
+          display: none;
+
+          &:checked ~ .radio-button-label {
+            color: $blue;
+            outline: 2px solid $blue;
+          }
+        }
+      }
+    }
+  }
+}

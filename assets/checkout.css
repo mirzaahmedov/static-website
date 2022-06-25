@@ -1,0 +1,116 @@
+.checkout-form-container {
+  padding: 0 20px 100px 20px;
+}
+.checkout-form-container .headline {
+  margin-top: 16px;
+}
+.checkout-form-container .flex {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+}
+@media (max-width: 840px) {
+  .checkout-form-container .flex {
+    flex-direction: column;
+  }
+}
+.checkout-form-container .flex form {
+  width: 100%;
+  max-width: 58.3333333333%;
+}
+@media (max-width: 1000px) {
+  .checkout-form-container .flex form {
+    max-width: 50%;
+  }
+}
+@media (max-width: 840px) {
+  .checkout-form-container .flex form {
+    max-width: inherit;
+    width: auto;
+  }
+}
+@media (max-width: 500px) {
+  .checkout-form-container .flex form {
+    margin-inline: -20px;
+  }
+}
+.checkout-form-container .flex form legend {
+  padding: 22px 50px;
+  font-weight: bold;
+  background-color: #eef1f3;
+}
+.checkout-form-container .flex form fieldset {
+  display: grid;
+  padding: 50px;
+  row-gap: 30px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  grid-template-areas: "one one" "two three" "four four";
+  border: 1px solid #eef1f3;
+}
+@media (max-width: 500px) {
+  .checkout-form-container .flex form fieldset {
+    border: none;
+  }
+}
+@media (max-width: 1000px) {
+  .checkout-form-container .flex form fieldset {
+    grid-template-areas: "one one" "two two" "three three" "four four";
+  }
+}
+.checkout-form-container .flex form fieldset label {
+  font-weight: bold;
+}
+.checkout-form-container .flex form fieldset input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+  width: 100%;
+  height: 37px;
+  border: 1px solid #4971ff;
+  border-radius: 5px;
+}
+.checkout-form-container .flex form fieldset .one {
+  grid-area: one;
+}
+.checkout-form-container .flex form fieldset .two {
+  grid-area: two;
+}
+.checkout-form-container .flex form fieldset .three {
+  grid-area: three;
+}
+.checkout-form-container .flex form fieldset .four {
+  grid-area: four;
+}
+.checkout-form-container .flex .purchase-info {
+  flex: 1;
+  padding: 30px 50px;
+}
+.checkout-form-container .flex .purchase-info b {
+  color: #4971ff;
+}
+.checkout-form-container .flex .purchase-info .items {
+  width: 100%;
+  border-spacing: 0px 30px;
+}
+.checkout-form-container .flex .purchase-info .items td:nth-child(2) {
+  color: #cecece;
+}
+.checkout-form-container .flex .purchase-info .items td:last-child {
+  text-align: right;
+}
+.checkout-form-container .flex .purchase-info .summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkout-form-container .flex .purchase-info .summary b {
+  font-size: 25px;
+  font-weight: normal;
+  color: #000000;
+}
+.checkout-form-container .flex .purchase-info .button {
+  width: 100%;
+  margin-top: 20px;
+}

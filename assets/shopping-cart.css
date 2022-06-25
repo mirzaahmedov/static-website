@@ -1,0 +1,96 @@
+.purchases-container {
+  padding: 0 20px;
+}
+.purchases-container .headline {
+  text-align: center;
+  margin-top: 50px;
+}
+.purchases-container .purchases-table {
+  margin-top: 50px;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #eef1f3;
+}
+.purchases-container .purchases-table tr {
+  border-bottom: 1px solid #eef1f3;
+}
+.purchases-container .purchases-table td {
+  padding: 20px 0;
+}
+.purchases-container .purchases-table td,
+.purchases-container .purchases-table th {
+  text-align: center;
+}
+.purchases-container .purchases-table td:first-child,
+.purchases-container .purchases-table th:first-child {
+  padding-left: 100px;
+  text-align: left;
+}
+.purchases-container .purchases-table td:last-child,
+.purchases-container .purchases-table th:last-child {
+  padding-right: 100px;
+}
+.purchases-container .purchases-table td:nth-child(even) {
+  font-weight: bold;
+  color: #4971ff;
+}
+.purchases-container .purchases-table thead {
+  text-align: left;
+  height: 64px;
+  background-color: #eef1f3;
+}
+
+.purchased-product .product-name {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #4971ff;
+}
+.purchased-product .product-info {
+  list-style-type: none;
+  font-size: 14px;
+  color: #cecece;
+}
+
+.purchase-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  padding: 40px 100px;
+}
+.purchase-actions .promocode-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  width: 100%;
+  max-width: 260px;
+  height: 27px;
+  margin-right: auto;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #cecece;
+}
+.purchase-actions .promocode-input::-moz-placeholder {
+  color: #cecece;
+  opacity: 1;
+}
+.purchase-actions .promocode-input:-ms-input-placeholder {
+  color: #cecece;
+  opacity: 1;
+}
+.purchase-actions .promocode-input::placeholder {
+  color: #cecece;
+  opacity: 1;
+}
+.purchase-actions .promocode-input:-ms-input-placeholder {
+  color: #cecece;
+  opacity: 1;
+}
+.purchase-actions .summary {
+  font-size: 14px;
+}
+.purchase-actions .summary b {
+  font-weight: normal;
+  font-size: 25px;
+  margin-inline: 50px;
+}
